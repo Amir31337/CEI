@@ -273,7 +273,7 @@ Input → Encoder → ─┤                  ├─ z → Decoder → Output
 
 ## Hardware
 
-Scripts are optimized for NVIDIA A100 GPUs but will run on any CUDA-capable device. CPU fallback is supported. Key optimizations:
+Scripts are optimized for NVIDIA A40 GPUs but will run on any CUDA-capable device. CPU fallback is supported. Key optimizations:
 - TF32 matrix multiplication on Ampere+ GPUs
 - `torch.compile` with `reduce-overhead` mode (when available)
 - Fused AdamW optimizer kernels
