@@ -294,9 +294,3 @@ If you use this work, please cite:
   doi     = {<DOI>}
 }
 ```
-
-```
-
-## License
-
-This project is released under the MIT License.
