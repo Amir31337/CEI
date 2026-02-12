@@ -281,13 +281,20 @@ Scripts are optimized for NVIDIA A100 GPUs but will run on any CUDA-capable devi
 
 ## Citation
 
-If you use this code, please cite:
+If you use this work, please cite:
 
 ```bibtex
-@article{cei_inverse_2026,
-    title={Deep Learning for Inverse Coulomb Explosion Imaging},
-    year={2026}
+@article{ghanaatian_molecular_cei,
+  author  = {Ghanaatian, A.},
+  title   = {Neural Network Based Molecular Structure Retrieval from Coulomb Explosion Imaging Data},
+  journal = {<Journal Name>},
+  year    = {2026},
+  volume  = {<Volume>},
+  pages   = {<Pages>},
+  doi     = {<DOI>}
 }
+```
+
 ```
 
 ## License
