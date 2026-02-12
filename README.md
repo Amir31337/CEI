@@ -242,6 +242,31 @@ csv_file = "../MLP/results/results/mlp_test_full_data.csv"
 PATH = "../MLP/results/results/mlp_test_full_data.csv"
 ```
 
+### 4. Manual Split
+
+These setup instructions assume that the entire dataset is stored in a single file.  
+The train/validation/test split is performed randomly within the script.
+
+If your data is structured differently (e.g., multiple files, pre-separated splits, or grouped data), only the data loading logic needs to be modified. The rest of the pipeline remains unchanged.
+
+This setup was specifically used for the **"isomers" experiment**, where one isomer was excluded from the dataset during training. In this case, the split was applied after filtering out the selected isomer.
+
+#### Key Assumptions
+
+- All data is contained in a single file.
+- Random splitting is sufficient for the experiment.
+- No stratification is applied unless explicitly added.
+- Filtering (e.g., excluding one isomer) occurs before splitting.
+
+#### When to Modify
+
+You need to adjust the data loading section if:
+
+- The dataset is distributed across multiple files.
+- The split is predefined.
+- You require stratified or grouped splitting.
+- The exclusion logic (e.g., isomer-based filtering) changes.
+
 ## Model Details
 
 ### MLP
